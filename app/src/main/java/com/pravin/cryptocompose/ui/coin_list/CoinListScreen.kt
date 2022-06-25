@@ -31,7 +31,7 @@ fun CoinListScreen(
 
     Box(modifier = Modifier.fillMaxSize()){
          LazyColumn(modifier = Modifier.fillMaxSize()){
-             items(state.coins){coin->
+             items( state.coins ){coin->
                  CoinListItem(coin = coin,
                      onItemClick = {
                          navController.navigate(Screen.CoinDetailsScreen.route+"/${coin.id}")
